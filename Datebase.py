@@ -4,9 +4,6 @@ import sqlite3
 # Import regular experssion module in order to check the correctness of emails
 import re
 
-# Import design module
-import Design
-
 # Open database if it existed else create it and save it in a varuable
 db = sqlite3.connect("Members.db")
 
@@ -190,8 +187,7 @@ def update():
             print("---<( Invalid information given )>---")
 
 # Printing wellcome letter
-print()
-Design.color("          Wellcome to Members database","white","bold")
+print("\n          Wellcome to Members database","white","bold")
 
 # The main loop and sorting the functions
 while True:
